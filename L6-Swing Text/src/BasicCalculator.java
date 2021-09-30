@@ -40,14 +40,14 @@ public class BasicCalculator {
 
         resultLabel = new JLabel("0.00");
 
-        window.setSize(200, 400);
+        window.setSize(20, 400);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLocationRelativeTo(null);
 
         addButton.addActionListener(new addListener());
-        subButton.addActionListener(new addListener());
-        multiplyButton.addActionListener(new addListener());
-        divisionButton.addActionListener(new addListener());
+        subButton.addActionListener(new subListener());
+        multiplyButton.addActionListener(new multiplyListener());
+        divisionButton.addActionListener(new divisionListener());
 
         panel.add(inputLabel);
         panel.add(Number1);
